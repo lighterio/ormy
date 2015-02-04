@@ -73,4 +73,12 @@ describe('Database', function () {
     var order = 'created, ormy desc;DROP TABLE customers order by 1, test';
     is.same(query.getOrderBy(model, order),' ORDER BY `created` , `ormy` desc');
   });
+
+  it('passing object', function () {
+    var order = {
+      a: 1,
+      b: 2
+    };
+    is.same(query.getOrderBy(model, order), '');
+  });
 });
