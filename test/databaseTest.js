@@ -5,16 +5,16 @@ describe('Database', function () {
   var model = {
     fields : {
       'created': {
-        as: 'created'
+        as: '`created`'
       },
       'ormy': {
-        as: 'ormy'
+        as: '`ormy`'
       },
       'label': {
-        as: 'label'
+        as: '`label`'
       },
       'name': {
-        as: 'name'
+        as: '`name`'
       }
     }
   };
